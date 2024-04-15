@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="ProjectX.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Formula 1</title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <table>
+    <tr>
+        <td style="width:15%"><h4 id="stdtime"></h4></td>
+        <td style="width:70%"><h1>Formula 1</h1></td>
+        <td style="width:15%"><%=loginMsg %></td>
+    </tr>
+    <tr>
+        <td class="nav" colspan="3" style="text-align:center">
+            <ul>
+                <li style="color:lightblue"><a herf="Main.aspx">Main</a></li>
+                <li style="color:lightblue"><a herf="Table">Table</a></li>
+                <%=openPages %>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td class="main" colspan="3">
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </td>
+</tr>
+    <tr>
+    <td class="footer" colspan="3">
+        <h4>Contact :<a herf="mailto:razishimi120@gmail.com">Razi Shimi</a></h4>
+    </td>
+    </tr>
+    </table>
+
+<script>
+
+    let time = document.getElementById("stdtime");
+    let date = document.getElementById("stddate");
+
+    setInterval(() => {
+
+        let d = new Date;
+        time.innerHTML = d.toLocaleTimeString();
+        date.innerHTML = d.toLocaleDateString();
+    })
+
+</script>
+</body>
+</html>
