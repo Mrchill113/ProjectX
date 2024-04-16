@@ -18,7 +18,7 @@ namespace ProjectX.HTML
             string pw = Request.Form["password"];
 
             string fileName = "userDB.mdf";
-            string tableName = "usersTb1";
+            string tableName = "usersTbl";
 
             sqllogin = $"SELECT * from {tableName} where UName = '{uName}' and pass = '{pw}'";
 

@@ -5,7 +5,77 @@
 <html>
 <head runat="server">
     <title>Formula 1</title>
-    <link href="StyleSheet1.css" rel="stylesheet" />
+
+
+    <style>
+
+
+        body {
+    direction: ltr;
+    background-color: silver;
+    margin: 0px;
+}
+
+table {
+    width: 1300px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+}
+
+.nav {
+    width: 100%;
+    display: inline;
+    height: 35px;
+    float: left;
+    border: 2px solid black;
+    line-height: 30px;
+    margin-top: -15px;
+    margin-right: 9px;
+    text-align: center;
+    background-color: #1b222c;
+    padding: 10px;
+}
+
+.main {
+    width: 100%;
+    height: 380px;
+    border: 1px solid silver;
+    
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-image: url('../pictures/download.jpg');
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+}
+
+ul {
+    text-align: center;
+}
+
+
+    </style>
+
+
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -13,15 +83,15 @@
 
     <table>
     <tr>
-        <td style="width:15%"><h4 id="stdtime"></h4></td>
+        <td style="width:15%"><ul><h4 id="stdtime"></h4><h4 id="stddate"></h4></ul></td>
         <td style="width:70%"><h1>Formula 1</h1></td>
         <td style="width:15%"><%=loginMsg %></td>
     </tr>
     <tr>
-        <td class="nav" colspan="3" style="text-align:center">
+        <td colspan="3" style="text-align:center">
             <ul>
-                <li style="color:lightblue"><a herf="Main.aspx">Main</a></li>
-                <li style="color:lightblue"><a herf="Table">Table</a></li>
+                <li style="color:lightblue"><a href="Main.aspx">Main</a></li>
+                <li style="color:lightblue"><a href="ShowTable.aspx">ShowTable</a></li>
                 <%=openPages %>
             </ul>
         </td>

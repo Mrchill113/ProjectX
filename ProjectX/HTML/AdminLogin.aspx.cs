@@ -20,9 +20,9 @@ namespace ProjectX.HTML
                 string adminP = Request.Form["adminPass"];
 
                 string filename = "usersDB.mdf";
-                string tableName = "AdminTbl";
+                string tableName = "adminsTbl";
 
-                sqllogin = $"SELECT * from {tableName} where AdminUName = '{adminUN}' and AddminPass = '{adminP}'";
+                sqllogin = $"SELECT * from {tableName} where uName = '{adminUN}' and pw = '{adminP}'";
 
                 DataTable table = Helper.ExecuteDataTable(filename, sqllogin);
                 int length = table.Rows.Count;
