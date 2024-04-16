@@ -17,7 +17,7 @@ namespace ProjectX.HTML
         {
             if (Session["admin"].ToString() == "no")
             {
-                msg += "<div style='text-align: center; color: aliceblue;'>";
+                msg += "<div style='text-align: center; color: black;'>";
                 msg += "<h3>you are not an admin</h3>";
                 msg += "<a href=\"Main.aspx\">[  continue  ]</a>";
                 msg += "</div>";
@@ -25,7 +25,7 @@ namespace ProjectX.HTML
             else
             {
                 string fileName = "userDB.mdf";
-                string tableName = "userTbl";
+                string tableName = "usersTbl";
 
                 sqlSelect = "SELECT * FROM " + tableName;
 
@@ -44,6 +44,7 @@ namespace ProjectX.HTML
                     st += "<th style = 'text-align: center; border: 1px solid black; width: 60px;'>gender</th>";
                     st += "<th style = 'text-align: center; border: 1px solid black; width: 100px;'>cellphone</th>";
                     st += "<th style = 'text-align: center; border: 1px solid black; width: 100px;'>living area</th>";
+                    st += "<th style = 'text-align: center; border: 1px solid black;'>Playing Sports</th>";
                     st += "<th style = 'text-align: center; border: 1px solid black;'>Reading</th>";
                     st += "<th style = 'text-align: center; border: 1px solid black;'>Drawing</th>";
                     st += "<th style = 'text-align: center; border: 1px solid black;'>Rizzing</th>";
@@ -57,7 +58,7 @@ namespace ProjectX.HTML
                     st += "<tr>";
                     st += "<td style = 'text-align: center; border: 1px solid black;'>" + table.Rows[i]["uName"] + "</td>";
                     st += "<td style = 'border: 1px solid black;'>" + table.Rows[i]["fName"] + "</td>";
-                    st += "<td style = 'border: 1px solid black;'>" + table.Rows[i]["IName"] + "</td>";
+                    st += "<td style = 'border: 1px solid black;'>" + table.Rows[i]["lName"] + "</td>";
                     st += "<td style = 'border: 1px solid black; width: 60; text-align:left;'>" + table.Rows[i]["email"] + "</td>";
                     st += "<td style = 'text-align: center; border: 1px solid black;'>" + table.Rows[i]["YearBorn"] + "</td>";
                     st += "<td style = 'text-align: center; border: 1px solid black;'>" + table.Rows[i]["gender"] + "</td>";

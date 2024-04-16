@@ -18,7 +18,7 @@
         <tr style="border: 0px solid silver;">
             <td style="border: 0px solid silver; text-align:center;">
                 Password :&nbsp;
-                <input type="text" name="password" required />
+                <input type="password" name="password" required />
             </td>
         </tr>
         <tr style="border: 0px solid silver;">

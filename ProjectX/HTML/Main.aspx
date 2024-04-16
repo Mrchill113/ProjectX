@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Main.aspx.cs" Inherits="ProjectX.HTML.Main" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-
+    <link href="../StyleSheet1.css" rel="stylesheet" />
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Formula One Website</title>
@@ -66,7 +66,7 @@
     <!-- Table for History -->
     <table>
         <tr>
-            <td style="width: 100%;">
+            <td style="width: 100%;background-color: darkslategray;">
                 <h2>History</h2>
                 <p>Include information about the history of Formula One here...</p>
             </td>
@@ -76,7 +76,7 @@
     <!-- Table for Yearly Schedule -->
     <table>
         <tr>
-            <td style="width: 100%;">
+            <td style="width: 100%;background-color: darkslategray;">
                 <h2>Yearly Schedule</h2>
                 <p>Include information about the yearly schedule of Formula One races here...</p>
             </td>
@@ -89,7 +89,7 @@
     <!-- Table for Upcoming Grand Prix -->
     <table>
         <tr>
-            <td style="width: 100%;">
+            <td style="width: 100%;background-color: darkslategray;">
                 <h2>Upcoming Grand Prix</h2>
                 <p>Include details about the next Grand Prix here...</p>
             </td>
@@ -99,7 +99,7 @@
     <!-- Table for Latest Grand Prix -->
     <table>
         <tr>
-            <td style="width: 100%;">
+            <td style="width: 100%;background-color: darkslategray;">
                 <h2>Latest Grand Prix</h2>
                 <p>Include information about the latest Grand Prix here...</p>
             </td>

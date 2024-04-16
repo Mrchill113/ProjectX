@@ -21,8 +21,9 @@ table {
     height: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: aliceblue;
+    background-color: silver;
     text-align: center;
+    color: black;
 }
 
 .header {
@@ -40,7 +41,7 @@ table {
     margin-top: -15px;
     margin-right: 9px;
     text-align: center;
-    background-color: #1b222c;
+    background-color: silver;
     padding: 10px;
 }
 
@@ -90,8 +91,8 @@ ul {
     <tr>
         <td colspan="3" style="text-align:center">
             <ul>
-                <li style="color:lightblue"><a href="Main.aspx">Main</a></li>
-                <li style="color:lightblue"><a href="ShowTable.aspx">ShowTable</a></li>
+                <li style="color:whitesmoke"><a href="Main.aspx">Main</a></li>
+                <li style="color:whitesmoke"><a href="ShowTable.aspx">ShowTable</a></li>
                 <%=openPages %>
             </ul>
         </td>

@@ -7,12 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace ProjectX.HTML
 {
-    public partial class Logout : System.Web.UI.Page
+    public partial class TableInfo : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Session.Abandon();
-            Response.Redirect("Main.aspx");
+
         }
     }
 }

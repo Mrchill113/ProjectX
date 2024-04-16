@@ -20,7 +20,7 @@ namespace ProjectX.HTML
             string fileName = "userDB.mdf";
             string tableName = "usersTbl";
 
-            sqllogin = $"SELECT * from {tableName} where UName = '{uName}' and pass = '{pw}'";
+            sqllogin = $"SELECT * from {tableName} where UName = '{uName}' and pw = '{pw}'";
 
             DataTable table = Helper.ExecuteDataTable(fileName, sqllogin);
             int length = table.Rows.Count;

@@ -22,23 +22,26 @@ namespace ProjectX
 
                 if (Session["UName"].ToString() == "Guest")
                 {
+                    //guest login
                     loginMsg += "<h4><a href=\"ChForm.aspx\"> Create new account</a>";
                     loginMsg += "<a href=\"Login.aspx\"> or Log in with account</a></h4>";
                     openPages = "<li style=\"color:lightblue\"><a href=\"AdminLogin.aspx\">AdminLogin</a></li>";
                 }
                 else
                 {
-                    loginMsg += "<h4><a href = 'Logout.aspx'> Log out from account</a></h4>";
+                    //member login
+                    loginMsg += "<h4><a href=\"Logout.aspx\">Logout from account</a></h4>";
                     openPages = "<li style=\"color:lightblue\"><a href='WritersWMP.aspx'>Writers</a></li>";
                     openPages += "<li style=\"color:lightblue\"><a href='EditUserInfo.aspx'>Your Info</a></li>";
-                    openPages += "<li style=\"color:lightblue\"><a href='Chat.aspx'>Chat</a></li>";
+                    openPages += "<li style=\"color:lightblue\"><a href=\"TableInfo.aspx\">Teams Information</a></li>";
                     openPages += "<li style=\"color:lightblue\"><a href='AdminLogin.aspx'>Admin Login</a></li>";
                 }
             }
             else
             {
+                //admin login
                 loginMsg += "Admin </h4>";
-                loginMsg += "<h4><a herf= 'AdminLogout.aspx'>Admin Logout</a></h4>";
+                loginMsg += "<h4><a href=\"Logout.aspx\">Admin Logout</a></h4>";
                 openPages = "<li style=\"color:lightblue\"><a href= 'WritersWMP.aspx'>writers</a></li>";
                 openPages += "<li style=\"color:lightblue\"><a href= 'Chat.aspx'>Chat</a></li>";
                 openPages += "<li style=\"color:lightblue\"><a href= 'Queries.aspx'>Admin</a></li>";

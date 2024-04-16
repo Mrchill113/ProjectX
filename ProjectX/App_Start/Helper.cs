@@ -29,7 +29,7 @@ public class Helper
 
         //string connString = @"";
 
-        string path = "C:\\Users\\andrio\\source\\repos\\ProjectX\\ProjectX\\App_Data\\usersDB.mdf";
+        string path = "D:\\programing\\Visual Studio File\\ProjectX\\ProjectX\\App_Data\\userDB.mdf";
 
         string connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + path + ";Integrated Security=True;Connect Timeout=30";
 
