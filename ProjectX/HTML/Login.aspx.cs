@@ -14,30 +14,33 @@ namespace ProjectX.HTML
         public string msg = "";
         protected void Page_Load(object sender, EventArgs e)
         {
-            string uName = Request.Form["username"];
-            string pw = Request.Form["password"];
-
-            string fileName = "userDB.mdf";
-            string tableName = "usersTbl";
-
-            sqllogin = $"SELECT * from {tableName} where UName = '{uName}' and pw = '{pw}'";
-
-            DataTable table = Helper.ExecuteDataTable(fileName, sqllogin);
-            int length = table.Rows.Count;
-            if (length == 0)
-                msg = "Username has yet to be registered!";
-            else
+            if (Request.Form["submit"] != null)
             {
-                Application.Lock();
-                //Increase the Login Counter by one
-                Application["counter"] = (int)Application["counter"] + 1;
+                string uName = Request.Form["username"];
+                string pw = Request.Form["password"];
 
-                Application.UnLock();
+                string fileName = "userDB.mdf";
+                string tableName = "usersTbl";
 
-                //Bilnd the current logged in user info
-                Session["UName"] = table.Rows[0]["UName"];
-                Session["Fname"] = table.Rows[0]["FName"];
-                Response.Redirect("Main.aspx");
+                sqllogin = $"SELECT * from {tableName} where UName = '{uName}' and pw = '{pw}'";
+
+                DataTable table = Helper.ExecuteDataTable(fileName, sqllogin);
+                int length = table.Rows.Count;
+                if (length == 0)
+                    msg = "Username has yet to be registered!";
+                else
+                {
+                    Application.Lock();
+                    //Increase the Login Counter by one
+                    Application["counter"] = (int)Application["counter"] + 1;
+
+                    Application.UnLock();
+
+                    //Bilnd the current logged in user info
+                    Session["UName"] = table.Rows[0]["UName"];
+                    Session["Fname"] = table.Rows[0]["FName"];
+                    Response.Redirect("Main.aspx");
+                }
             }
         }
     }

@@ -128,14 +128,24 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="HTML\AdminControl.aspx" />
     <Content Include="HTML\AdminLogin.aspx" />
     <Content Include="HTML\AdminLogout.aspx" />
     <Content Include="HTML\ChForm.aspx" />
+    <Content Include="HTML\DeleteAction.aspx" />
+    <Content Include="HTML\DeleteUser.aspx" />
+    <Content Include="HTML\EditInfo.aspx" />
     <Content Include="HTML\Login.aspx" />
     <Content Include="HTML\Logout.aspx" />
     <Content Include="HTML\Main.aspx" />
+    <Content Include="HTML\OneAttribute.aspx" />
     <Content Include="HTML\ShowTable.aspx" />
     <Content Include="HTML\TableInfo.aspx" />
+    <Content Include="HTML\Team1.aspx" />
+    <Content Include="HTML\TwoAttributes.aspx" />
+    <Content Include="JavaScript\DetectField.js" />
+    <Content Include="JavaScript\detectfields.js" />
+    <Content Include="JavaScript\Signup.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -194,6 +204,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="StyleSheet1.css" />
+    <Content Include="StyleSheet2.css" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -227,6 +238,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="HTML\AdminControl.aspx.cs">
+      <DependentUpon>AdminControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\AdminControl.aspx.designer.cs">
+      <DependentUpon>AdminControl.aspx</DependentUpon>
+    </Compile>
     <Compile Include="HTML\AdminLogin.aspx.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -247,6 +265,27 @@
     </Compile>
     <Compile Include="HTML\ChForm.aspx.designer.cs">
       <DependentUpon>ChForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\DeleteAction.aspx.cs">
+      <DependentUpon>DeleteAction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\DeleteAction.aspx.designer.cs">
+      <DependentUpon>DeleteAction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\DeleteUser.aspx.cs">
+      <DependentUpon>DeleteUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\DeleteUser.aspx.designer.cs">
+      <DependentUpon>DeleteUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\EditInfo.aspx.cs">
+      <DependentUpon>EditInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\EditInfo.aspx.designer.cs">
+      <DependentUpon>EditInfo.aspx</DependentUpon>
     </Compile>
     <Compile Include="HTML\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -269,6 +308,13 @@
     <Compile Include="HTML\Main.aspx.designer.cs">
       <DependentUpon>Main.aspx</DependentUpon>
     </Compile>
+    <Compile Include="HTML\OneAttribute.aspx.cs">
+      <DependentUpon>OneAttribute.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\OneAttribute.aspx.designer.cs">
+      <DependentUpon>OneAttribute.aspx</DependentUpon>
+    </Compile>
     <Compile Include="HTML\ShowTable.aspx.cs">
       <DependentUpon>ShowTable.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -282,6 +328,20 @@
     </Compile>
     <Compile Include="HTML\TableInfo.aspx.designer.cs">
       <DependentUpon>TableInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\Team1.aspx.cs">
+      <DependentUpon>Team1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\Team1.aspx.designer.cs">
+      <DependentUpon>Team1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\TwoAttributes.aspx.cs">
+      <DependentUpon>TwoAttributes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\TwoAttributes.aspx.designer.cs">
+      <DependentUpon>TwoAttributes.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>

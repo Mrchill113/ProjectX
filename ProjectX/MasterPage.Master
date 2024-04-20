@@ -1,81 +1,11 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="ProjectX.MasterPage" %>
 
 <!DOCTYPE html>
-
 <html>
 <head runat="server">
     <title>Formula 1</title>
 
-
-    <style>
-
-
-        body {
-    direction: ltr;
-    background-color: silver;
-    margin: 0px;
-}
-
-table {
-    width: 1300px;
-    height: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: silver;
-    text-align: center;
-    color: black;
-}
-
-.header {
-    width: 100%;
-    height: 60px;
-}
-
-.nav {
-    width: 100%;
-    display: inline;
-    height: 35px;
-    float: left;
-    border: 2px solid black;
-    line-height: 30px;
-    margin-top: -15px;
-    margin-right: 9px;
-    text-align: center;
-    background-color: silver;
-    padding: 10px;
-}
-
-.main {
-    width: 100%;
-    height: 380px;
-    border: 1px solid silver;
-    
-}
-
-.footer {
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    background-image: url('../pictures/download.jpg');
-}
-
-h1, h2, h3 {
-    text-align: center;
-}
-
-li {
-    display: inline-block;
-    padding: 10px;
-}
-
-ul {
-    text-align: center;
-}
-
-
-    </style>
-
-
+    <link href="StyleSheet1.css" rel="stylesheet" />
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -83,46 +13,42 @@ ul {
 <body>
 
     <table>
-    <tr>
-        <td style="width:15%"><ul><h4 id="stdtime"></h4><h4 id="stddate"></h4></ul></td>
-        <td style="width:70%"><h1>Formula 1</h1></td>
-        <td style="width:15%"><%=loginMsg %></td>
-    </tr>
-    <tr>
-        <td colspan="3" style="text-align:center">
-            <ul>
-                <li style="color:whitesmoke"><a href="Main.aspx">Main</a></li>
-                <li style="color:whitesmoke"><a href="ShowTable.aspx">ShowTable</a></li>
-                <%=openPages %>
-            </ul>
-        </td>
-    </tr>
-    <tr>
-        <td class="main" colspan="3">
-
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </td>
-</tr>
-    <tr>
-    <td class="footer" colspan="3">
-        <h4>Contact :<a herf="mailto:razishimi120@gmail.com">Razi Shimi</a></h4>
-    </td>
-    </tr>
+        <tr>
+            <td style="width:15%"><ul><h4 id="stdtime"></h4><h4 id="stddate"></h4></ul></td>
+            <td style="width:70%"><h1>Formula 1</h1></td>
+            <td style="width:15%"><%=loginMsg %></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align:center">
+                <ul>
+                    <li><a href="Main.aspx">Main</a></li>
+                    <li><a href="ShowTable.aspx">ShowTable</a></li>
+                    <li><%=openPages %></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="main" colspan="3">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center;" colspan="3">
+                <h4>Contact :<a href="mailto:razi.black65@gmail.com">Razi Shimi</a></h4>
+            </td>
+        </tr>
     </table>
 
-<script>
+    <script>
+        let time = document.getElementById("stdtime");
+        let date = document.getElementById("stddate");
 
-    let time = document.getElementById("stdtime");
-    let date = document.getElementById("stddate");
-
-    setInterval(() => {
-
-        let d = new Date;
-        time.innerHTML = d.toLocaleTimeString();
-        date.innerHTML = d.toLocaleDateString();
-    })
-
-</script>
+        setInterval(() => {
+            let d = new Date;
+            time.innerHTML = d.toLocaleTimeString();
+            date.innerHTML = d.toLocaleDateString();
+        })
+    </script>
 </body>
 </html>

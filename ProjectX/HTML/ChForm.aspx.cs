@@ -46,7 +46,7 @@ namespace ProjectX.HTML
                 string tableName = "usersTbl";
 
                 //Check if username is used in DataBase
-                string sqlSelect = "SELECT * FORM" + tableName + " WHERE UName ='" + uname + "'";
+                string sqlSelect = "SELECT * FROM " + tableName + " WHERE uName ='" + uname + "'";
                 string sqlInsert;
 
                 if (Helper.IsExist(fileName, sqlSelect))
@@ -58,7 +58,7 @@ namespace ProjectX.HTML
                     sqlInsert = "INSERT INTO usersTbl";
                     sqlInsert += " VALUES ('" + uname + "','" + fname + "','" + lname + "','" + email + "','" + yearB + "','";
                     sqlInsert += gender + "','" + prefix + "','" + phone + "','" + city + "','";
-                    sqlInsert += ch1 + "','" + ch2 + "','" + ch3 + "','" + ch4 + "','" + ch5 + "','" + password + "')'";
+                    sqlInsert += ch1 + "','" + ch2 + "','" + ch3 + "','" + ch4 + "','" + ch5 + "','" + password + "')";
                     Helper.DoQuery(fileName, sqlInsert);
 
                     Merror = "Successfully Signed Up to my Website!";
@@ -83,8 +83,7 @@ namespace ProjectX.HTML
                     Application.UnLock();
 
                     Session["UName"] = uname;
-                    Session["FName"] = fname;
-
+                    Session["fName"] = fname;
                     Response.Redirect("Main.aspx");
                 }
 

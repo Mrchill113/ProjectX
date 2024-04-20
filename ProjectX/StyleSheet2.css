@@ -1,0 +1,100 @@
+﻿body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #d9a5b3;
+    color: #c6d7eb;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #c6d7eb;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Page header */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1868ae;
+}
+
+/* Team links */
+.team-links {
+    list-style-type: none;
+    padding: 10px 0;
+    text-align: center;
+}
+
+    .team-links li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+/* Section headers */
+.section-header {
+    background-color: #1868ae;
+    color: #c6d7eb;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Section content */
+.section-content {
+    background-color: #d9a5b3;
+    border: 1px solid #c6d7eb;
+    border-top: none;
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    color: black;
+}
+
+th, td {
+    border: 1px solid #c6d7eb;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #1868ae;
+    color: #c6d7eb;
+}
+
+/* Team info styles */
+.team-info {
+    margin-bottom: 20px;
+}
+
+    .team-info h2 {
+        margin-top: 0;
+        color: #1868ae;
+        font-size: 24px;
+    }
+
+    .team-info p {
+        color: #1868ae;
+        margin-bottom: 10px;
+    }
+
+/* Inline display for specific links */
+.team-links a {
+    display: inline;
+}

@@ -2,6 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
     <link href="../StyleSheet1.css" rel="stylesheet" />
+    <script src="../JavaScript/Signup.js"></script>
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -12,7 +13,7 @@
     <table style="width:auto; height: auto;">
          <tr style="border: 0px solid silver;">
              <td style="border: 0px solid silver; text-align:center;"> 
-               User name:
+               Username:
                <input type="text" id="UName" name="UName" required/>
                <input type="text" id="mUName" size="18" style="display: none; background-color: silver; color:firebrick" disabled="disabled" />
              </td>
@@ -20,15 +21,15 @@
         <tr style ="border: 0px solid silver;">
             <td style ="border: 0px solid silver;text-align:center;">
                 First name:
-                <input type="text" id="FName" required />
-                <input type="text" id="mFName" size="18" stle="display:none; background-color:silver; color:firebrick" disabled="disabled" />
+                <input type="text" id="FName" name="FName" required />
+                <input type="text" id="mFName" size="18" style="display:none; background-color:silver; color:firebrick" disabled="disabled" />
             </td>
         </tr>
          <tr style ="border: 0px solid silver;">
              <td style ="border: 0px solid silver;text-align:center;">
                  Last name:
-                 <input type="text" id="LName" required />
-                 <input type="text" id="mLName" size="18" stle="display:none; background-color:silver; color:firebrick" disabled="disabled" />
+                 <input type="text" id="LName" name="LName" required />
+                 <input type="text" id="mLName" size="18" style="display:none; background-color:silver; color:firebrick" disabled="disabled" />
              </td>
          </tr>
         <tr>
@@ -98,7 +99,7 @@
                     <option value="059">059</option>
                 </select>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp
-                <input type="number" id="Phone" required />
+                <input type="number" id="Phone" name="Phone" required />
                 <input type="text" id="mPhone" size="18" style="display:none; background-color:silver; color:firebrick" disabled="disabled" />
             </td>
         </tr>
