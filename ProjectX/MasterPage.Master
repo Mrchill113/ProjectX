@@ -22,7 +22,6 @@
             <td colspan="3" style="text-align:center">
                 <ul>
                     <li><a href="Main.aspx">Main</a></li>
-                    <li><a href="ShowTable.aspx">ShowTable</a></li>
                     <li><%=openPages %></li>
                 </ul>
             </td>
@@ -39,7 +38,6 @@
             </td>
         </tr>
     </table>
-
     <script>
         let time = document.getElementById("stdtime");
         let date = document.getElementById("stddate");

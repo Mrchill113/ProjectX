@@ -1,9 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Team1.aspx.cs" Inherits="ProjectX.HTML.Team1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Team3.aspx.cs" Inherits="ProjectX.HTML.Team3" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
-    <link href="../StyleSheet2.css" rel="stylesheet" />
+        <link href="../StyleSheet2.css" rel="stylesheet" />
 
-    <style>
+        <style>
         .team-info {
             display: flex;
             align-items: center;
@@ -43,7 +43,7 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <h1>Mercedes AMG Petronas</h1>
+            <h1>Mclaren</h1>
         </div>
     </header>
 
@@ -51,27 +51,28 @@
     <div class="container">
         <!-- Team logo and car image -->
         <div class="team-info">
-            <img src="../Pictures/mercedes_logo-removebg-preview.png" alt="Team Logo">
-            <img src="../Pictures/mercedes_car-removebg-preview.png" alt="Team Car">
+            <img src="../Pictures/mclaren%20logo.png" alt="Team Logo">
+            <img src="../Pictures/mclaren_car-removebg-preview.png" alt="Team Car">
         </div>
 
         <!-- Drivers section -->
         <div class="drivers">
             <div class="driver">
-                <img style="width:300px" src="../Pictures/Hamilton-removebg-preview.png" alt="Driver 1">
+                <img src="../Pictures/norris.png" alt="Driver 1">
                 <p>Driver: Driver 1<br> Victories: 10<br> Pole Positions: 5</p>
             </div>
             <div class="driver">
-                <img style="width:300px" src="../Pictures/russell.png" alt="Driver 2">
+                <img src="../Pictures/piastri-removebg-preview.png" alt="Driver 2">
                 <p>Driver: Driver 2<br> Victories: 8<br> Pole Positions: 3</p>
             </div>
         </div>
 
         <!-- History section -->
         <div class="history">
-            <h2>Team's History</h2>
-            <p>The Mercedes AMG Petronas Formula One Team, commonly known as Mercedes, has established itself as one of the most dominant forces in the history of Formula One. The team's roots trace back to the 1950s when Mercedes-Benz first entered the sport. However, it wasn't until the modern era that Mercedes reasserted its presence in F1, acquiring the Brawn GP team in 2009. Since then, Mercedes has achieved unprecedented success, winning numerous Constructors' and Drivers' Championships. Led by notable figures such as Lewis Hamilton and team principal Toto Wolff, Mercedes has showcased a remarkable blend of engineering excellence, strategic prowess, and driver talent, making it a formidable force on the F1 grid. Through continuous innovation and a relentless pursuit of excellence, Mercedes has solidified its place in the annals of motorsport history, setting new benchmarks and redefining the standards of success in Formula One.</p>
+            <h2>Team History</h2>
+            <p>The McLaren F1 Team has carved out a storied legacy in the world of Formula One, marked by innovation, determination, and a relentless pursuit of excellence. Founded in 1963 by Bruce McLaren, the team quickly established itself as a force to be reckoned with, capturing its first Grand Prix victory in 1968. McLaren's pioneering spirit and commitment to pushing the boundaries of technology propelled it to unprecedented success, culminating in multiple Constructors' and Drivers' Championships over the years. With iconic drivers such as Ayrton Senna and Alain Prost behind the wheel, McLaren dominated the F1 scene throughout the 1980s and 1990s, setting new standards of performance and engineering prowess. Despite facing challenges in recent years, McLaren remains a formidable presence on the grid, fueled by a rich heritage and an unwavering passion for motorsport.</p>
         </div>
     </div>
+
 
 </asp:Content>

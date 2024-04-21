@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="ShowTable.aspx.cs" Inherits="ProjectX.HTML.ShowTable" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="../StyleSheet1.css" rel="stylesheet" />
+    <link href="../StyleSheet2.css" rel="stylesheet" />
         <style type="text/css">
     h1{color:black; text-align:center;}
     h2{text-align: center; direction:ltr;}

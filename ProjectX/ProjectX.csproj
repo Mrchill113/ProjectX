@@ -142,10 +142,34 @@
     <Content Include="HTML\ShowTable.aspx" />
     <Content Include="HTML\TableInfo.aspx" />
     <Content Include="HTML\Team1.aspx" />
+    <Content Include="HTML\Team2.aspx" />
+    <Content Include="HTML\Team3.aspx" />
+    <Content Include="HTML\Team4.aspx" />
+    <Content Include="HTML\Team5.aspx" />
     <Content Include="HTML\TwoAttributes.aspx" />
     <Content Include="JavaScript\DetectField.js" />
     <Content Include="JavaScript\detectfields.js" />
     <Content Include="JavaScript\Signup.js" />
+    <Content Include="Pictures\alonso.png" />
+    <Content Include="Pictures\AstonMartin logo.png" />
+    <Content Include="Pictures\astonmartin_car-removebg-preview.png" />
+    <Content Include="Pictures\carlos-sainz-ferrari-1-removebg-preview.png" />
+    <Content Include="Pictures\ferrari car.png" />
+    <Content Include="Pictures\ferrari_logo-removebg-preview.png" />
+    <Content Include="Pictures\Hamilton-removebg-preview.png" />
+    <Content Include="Pictures\Leclerc.png" />
+    <Content Include="Pictures\mclaren logo.png" />
+    <Content Include="Pictures\mclaren_car-removebg-preview.png" />
+    <Content Include="Pictures\mercedes_car-removebg-preview.png" />
+    <Content Include="Pictures\mercedes_logo-removebg-preview.png" />
+    <Content Include="Pictures\norris.png" />
+    <Content Include="Pictures\Perez.png" />
+    <Content Include="Pictures\piastri-removebg-preview.png" />
+    <Content Include="Pictures\red-bull-racing-logo-1-removebg-preview.png" />
+    <Content Include="Pictures\redbull_car-removebg-preview.png" />
+    <Content Include="Pictures\russell.png" />
+    <Content Include="Pictures\stroll.png" />
+    <Content Include="Pictures\verstappen.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -335,6 +359,34 @@
     </Compile>
     <Compile Include="HTML\Team1.aspx.designer.cs">
       <DependentUpon>Team1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\Team2.aspx.cs">
+      <DependentUpon>Team2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\Team2.aspx.designer.cs">
+      <DependentUpon>Team2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\Team3.aspx.cs">
+      <DependentUpon>Team3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\Team3.aspx.designer.cs">
+      <DependentUpon>Team3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\Team4.aspx.cs">
+      <DependentUpon>Team4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\Team4.aspx.designer.cs">
+      <DependentUpon>Team4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\Team5.aspx.cs">
+      <DependentUpon>Team5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\Team5.aspx.designer.cs">
+      <DependentUpon>Team5.aspx</DependentUpon>
     </Compile>
     <Compile Include="HTML\TwoAttributes.aspx.cs">
       <DependentUpon>TwoAttributes.aspx</DependentUpon>

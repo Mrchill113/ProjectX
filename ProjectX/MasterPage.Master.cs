@@ -41,6 +41,7 @@ namespace ProjectX
                 //admin login
                 loginMsg += "Admin </h4>";
                 loginMsg += "<h4><a href=\"Logout.aspx\">Admin Logout</a></h4>";
+                openPages += "<li style=\"color:lightblue\"><a href=\"TableInfo.aspx\">Teams Information</a></li>";
                 openPages += "<li style=\"color:lightblue\"><a href=\"AdminControl.aspx\">AdminControl</a></li>";
             }
         }

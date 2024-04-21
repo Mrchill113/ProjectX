@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="ChForm.aspx.cs" Inherits="ProjectX.HTML.ChForm" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
-    <link href="../StyleSheet1.css" rel="stylesheet" />
+    <link href="../StyleSheet2.css" rel="stylesheet" />
     <script src="../JavaScript/Signup.js"></script>
 
 </asp:Content>

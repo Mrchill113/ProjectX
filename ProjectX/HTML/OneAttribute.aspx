@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
     <script src="../JavaScript/DetectField.js"></script>
-    <link href="../StyleSheet1.css" rel="stylesheet" />
+    <link href="../StyleSheet2.css" rel="stylesheet" />
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
