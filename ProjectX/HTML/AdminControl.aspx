@@ -9,6 +9,7 @@
     <h1>Admin Control</h1>
     <h2><a href="ShowTable.aspx">ShowTable</a></h2>
     <h2><a href="DeleteUser.aspx">DeleteUser</a></h2>
+    <h2><a href="DeleteAll.aspx">DeleteAll.aspx</a></h2>
     <h2><a href="OneAttribute.aspx">OneAttribute</a></h2>
     <h2><a href="TwoAttributes.aspx">TwoAttributes</a></h2>
 

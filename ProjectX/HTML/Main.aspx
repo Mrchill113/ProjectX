@@ -5,8 +5,21 @@
     <title>Formula One Website</title>
     <link href="../StyleSheet2.css" rel="stylesheet" />
 
+    <style>
+  #backToTopBtn {
+    display: none; /* Hide the button by default */
+    position: fixed; /* Fixed position to stay on the screen */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    z-index: 99; /* Ensure it's above other content */
+    cursor: pointer; /* Show pointer cursor on hover */
+  }
+</style>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    
+    <img src="../Pictures/images-removebg-preview.png" alt="Back to Top" id="backToTopBtn" onclick="scrollToTop()" />
     <!-- Team links -->
     <ul class="team-links">
         <li><a href="#history">F1 History</a></li>
@@ -150,5 +163,24 @@
             </table>
         </div>
     </div>
+
+    <script>
+// Function to scroll to the top of the page
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' // Smooth scrolling behavior
+  });
+}
+
+// Show the back to top button when scrolling down
+window.onscroll = function() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("backToTopBtn").style.display = "block";
+  } else {
+    document.getElementById("backToTopBtn").style.display = "none";
+  }
+};
+    </script>
 
 </asp:Content>

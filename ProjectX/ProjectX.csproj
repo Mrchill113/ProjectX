@@ -133,6 +133,8 @@
     <Content Include="HTML\AdminLogout.aspx" />
     <Content Include="HTML\ChForm.aspx" />
     <Content Include="HTML\DeleteAction.aspx" />
+    <Content Include="HTML\DeleteAll.aspx" />
+    <Content Include="HTML\DeleteAllAction.aspx" />
     <Content Include="HTML\DeleteUser.aspx" />
     <Content Include="HTML\EditInfo.aspx" />
     <Content Include="HTML\Login.aspx" />
@@ -157,6 +159,7 @@
     <Content Include="Pictures\ferrari car.png" />
     <Content Include="Pictures\ferrari_logo-removebg-preview.png" />
     <Content Include="Pictures\Hamilton-removebg-preview.png" />
+    <Content Include="Pictures\images-removebg-preview.png" />
     <Content Include="Pictures\Leclerc.png" />
     <Content Include="Pictures\mclaren logo.png" />
     <Content Include="Pictures\mclaren_car-removebg-preview.png" />
@@ -296,6 +299,20 @@
     </Compile>
     <Compile Include="HTML\DeleteAction.aspx.designer.cs">
       <DependentUpon>DeleteAction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\DeleteAll.aspx.cs">
+      <DependentUpon>DeleteAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\DeleteAll.aspx.designer.cs">
+      <DependentUpon>DeleteAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\DeleteAllAction.aspx.cs">
+      <DependentUpon>DeleteAllAction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\DeleteAllAction.aspx.designer.cs">
+      <DependentUpon>DeleteAllAction.aspx</DependentUpon>
     </Compile>
     <Compile Include="HTML\DeleteUser.aspx.cs">
       <DependentUpon>DeleteUser.aspx</DependentUpon>
